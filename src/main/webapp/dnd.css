@@ -1,0 +1,89 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.width200 {
+    width: 200px;
+}
+
+/* ------------ DualListExample ------------ */
+.demo-main-panel {
+    width : 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+}
+
+
+.demo-DualListExample .dragdrop-selected ,
+.demo-DualListExample .dragdrop-dragging ,
+.demo-DualListExample .dragdrop-proxy {
+    filter: alpha(enabled = false);
+    opacity: 1.0;
+}
+
+.demo-DualListExample .dragdrop-boundary {
+    border: none;
+    background-color: transparent;
+}
+
+.demo-DualListExample .demo-MouseListBox {
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.demo-DualListExample .dragdrop-movable-panel {
+    border: none;
+}
+
+.demo-DualListExample-center {
+    margin: 0.4em;
+}
+
+.demo-DualListExample-center TD {
+    padding: 0.2em 0.4em;
+}
+
+.demo-DualListExample-center BUTTON {
+    width: 4em;
+}
+
+.demo-DualListExample-item-has-content {
+    cursor: pointer;
+}
+
+.demo-DualListExample .dragdrop-selected ,
+.demo-DualListExample .dragdrop-movable-panel .demo-DualListExample-item-has-content {
+    background: none repeat scroll 0 0 #C9EEFF;
+}

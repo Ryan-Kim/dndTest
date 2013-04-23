@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/lalala/client/HellowWidgetWorld.xml</param-value>
+    </context-param>
+
+    <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>lalala.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/dnd/greet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.faces</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>dnd.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
